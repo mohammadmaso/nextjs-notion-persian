@@ -19,6 +19,10 @@ import 'styles/notion.css'
 // global style overrides for prism theme (optional)
 import 'styles/prism-theme.css'
 
+import Fonts from '../theme/Font'
+import NProgress from 'nprogress'
+import Router from 'next/router'
+
 import * as React from 'react'
 import * as Fathom from 'fathom-client'
 import type { AppProps } from 'next/app'
@@ -37,6 +41,10 @@ import {
 if (!isServer) {
   bootstrap()
 }
+
+Router.events.on('routeChangeStart', () => NProgress.start())
+Router.events.on('routeChangeComplete', () => NProgress.done())
+Router.events.on('routeChangeError', () => NProgress.done())
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -67,5 +75,11 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Fonts>
+        <Component {...pageProps} />
+      </Fonts>
+    </>
+  )
 }
