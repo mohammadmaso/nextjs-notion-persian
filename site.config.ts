@@ -56,9 +56,5 @@ export default siteConfig({
       title: 'ارتباط',
       pageId: '69b89aede2ad49ea955c1254112b7682'
     },
-    {
-      title: 'دانشنامه',
-      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-    }
   ]
 })
