@@ -49,12 +49,16 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default',
-  // navigationStyle: 'custom',
+  // navigationStyle: 'default',
+  navigationStyle: 'custom',
   navigationLinks: [
     {
       title: 'ارتباط',
       pageId: '69b89aede2ad49ea955c1254112b7682'
+    },
+    {
+      title: 'مشارکت‌کنندگان',
+      pageId: '64cdae0874e24657bacf1a5ebcdbd17b'
     },
   ]
 })
