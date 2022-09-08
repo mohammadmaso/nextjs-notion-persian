@@ -54,7 +54,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'ارتباط',
-      pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+      pageId: '69b89aede2ad49ea955c1254112b7682'
     },
     {
       title: 'دانشنامه',
