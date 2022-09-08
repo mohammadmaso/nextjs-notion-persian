@@ -79,7 +79,7 @@ export const NotionPageHeader: React.FC<{
 
           <ToggleThemeButton />
 
-          {isSearchEnabled && <Search block={block} title={'جستجو محتوا'} />}
+          {isSearchEnabled && <Search block={block} title={'جستجوی محتوا'} />}
         </div>
       </div>
     </header>

@@ -382,3 +382,29 @@
 .notion-block-260baa77f1e1428b97fb14ac99c7c385 {
   display: none;
 }
+
+.notion-aside-table-of-contents {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.notion-table-of-contents-item-indent-level-1{
+display: inline-block;
+  margin-right: 16px;
+  margin-left: 0px;
+}
+.notion-table-of-contents-item-indent-level-2 {
+  display: inline-block;
+  margin-right: 32px;
+  margin-left: 0px;
+}
+
+div {
+  /* Or what selector you need */
+  unicode-bidi: plaintext;
+  text-align: start;
+  /* Align text automatically left/right*/
+}
+
+

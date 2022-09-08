@@ -20,6 +20,15 @@ export const PageHead: React.FC<
 
   const socialImageUrl = getSocialImageUrl(pageId) || image
 
+  React.useEffect(() => {
+    const TOC = document.getElementsByClassName(
+      'notion-aside-table-of-contents-header'
+    )[0]
+    if (TOC) {
+      TOC.innerHTML = 'فهرست مطالب'
+    }
+  }, [])
+
   return (
     <Head>
       <meta charSet='utf-8' />
