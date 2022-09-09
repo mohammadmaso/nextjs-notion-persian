@@ -58,6 +58,8 @@
   display: none;
 }
 
+
+
 .notion-gallery-grid .notion-page-title-text {
   font-size: 2em;
   white-space: unset;
@@ -405,6 +407,11 @@ div {
   unicode-bidi: plaintext;
   text-align: start;
   /* Align text automatically left/right*/
+}
+
+.notion-page-icon-inline {
+  margin-left: 6px !important;
+  margin-right: 0px !important;
 }
 
 
