@@ -2,19 +2,19 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '69b89aede2ad49ea955c1254112b7682',
+  rootNotionPageId: '504980839f4e4e54b3fd25c417e2805b',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'جامعه‌ی دانشجویی مدیریت کسب و کار',
-  domain: 'beta.nopa.onfo',
+  name: 'Mohammad msoudie personal blog',
+  domain: 'mohammadmaso.ir',
   author: 'Mohammad Masoudie',
 
   // open graph metadata (optional)
-  description: 'جامعه‌ی دانشجویی مدیریت کسب و کار ایران',
+  description: 'بلاگ شخصی محمد مسعودی',
 
   // social usernames (optional)
   twitter: 'adrunkmammad',
@@ -53,12 +53,12 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: 'ارتباط',
-      pageId: '69b89aede2ad49ea955c1254112b7682'
+      title: 'رزومه',
+      pageId: 'f5565f6e22674f5eb6f7b1577ba2b9e1'
     },
     {
-      title: 'مشارکت‌کنندگان',
-      pageId: '64cdae0874e24657bacf1a5ebcdbd17b'
+      title: 'بلاگ فارسی',
+      pageId: 'cada2ded78264d03b291f44cf9e7ebd5'
     },
   ]
 })
