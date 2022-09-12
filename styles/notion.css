@@ -402,7 +402,7 @@ display: inline-block;
   margin-left: 0px;
 }
 
-div {
+div a p h1 h2 h3 h4 h5 h6 blockquote a span {
   /* Or what selector you need */
   unicode-bidi: plaintext;
   text-align: start;
