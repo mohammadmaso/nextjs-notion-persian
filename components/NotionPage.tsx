@@ -33,6 +33,12 @@ import { NotionPageHeader } from './NotionPageHeader'
 
 import styles from './styles.module.css'
 
+// Mind Map
+
+import { Client } from '@notionhq/client'
+import { NotionToMarkdown } from 'notion-to-md'
+import MarkmapHooks from './MindMap'
+
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
 // -----------------------------------------------------------------------------
@@ -76,6 +82,19 @@ const Code = dynamic(() =>
     return m.Code
   })
 )
+
+// const notion = new Client({
+//   auth: process.env.NOTION_TOKEN
+// })
+
+// const n2m = new NotionToMarkdown({ notionClient: notion })
+
+// const createMarkDown = async (pageId: string): Promise<string> => {
+//   const mdblocks = await n2m.pageToMarkdown(pageId)
+//   const mdString = n2m.toMarkdownString(mdblocks)
+
+//   return mdString
+// }
 
 const Collection = dynamic(() =>
   import('react-notion-x/build/third-party/collection').then(
@@ -204,6 +223,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     block?.type === 'page' && block?.parent_table === 'collection'
 
   const showTableOfContents = !!isBlogPost
+
   const minTableOfContentsItems = 3
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -213,6 +233,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
     ),
     [block, recordMap, isBlogPost]
   )
+
+  // const MindMap = <MarkmapHooks inputMarkdown={createMarkDown(pageId)} />
 
   const footer = React.useMemo(() => <Footer />, [])
 
@@ -293,6 +315,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
+        // pageHeader={MindMap}
       />
 
       {/* <GitHubShareButton /> */}
