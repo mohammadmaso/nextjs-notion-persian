@@ -406,9 +406,17 @@ div, a, p, h1, h2, h3, h4, h5, h6, blockquote, b  {
   /* Or what selector you need */
   unicode-bidi: plaintext;
   text-align: start;
+  
   /* Align text automatically left/right*/
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    width : inherit;
+}
 .notion-page-icon-inline {
   margin-left: 6px !important;
   margin-right: 0px !important;
