@@ -33,11 +33,11 @@ import { NotionPageHeader } from './NotionPageHeader'
 
 import styles from './styles.module.css'
 
-// Mind Map
+// // Mind Map
 
-import { Client } from '@notionhq/client'
-import { NotionToMarkdown } from 'notion-to-md'
-import MarkmapHooks from './MindMap'
+// import { Client } from '@notionhq/client'
+// import { NotionToMarkdown } from 'notion-to-md'
+// import MarkmapHooks from './MindMap'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
